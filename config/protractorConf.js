@@ -39,7 +39,6 @@ exports.config = {
     //config for browserStack.
     directConnect: false,
     framework: 'jasmine',
-    // seleniumArgs: ['-Dwebdriver.ie.driver=node_modules/protractor/selenium/IEDriverServer.exe'],
     seleniumArgs: ['-Dwebdriver.ie.driver=node_modules/protractor/node_modules/webdriver-manager/selenium/IEDriverServer3.14.0.exe'],
 
     seleniumAddress: 'http://localhost:4444/wd/hub',

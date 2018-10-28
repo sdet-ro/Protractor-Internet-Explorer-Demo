@@ -1,17 +1,16 @@
 {
-  "name": "protractor-setup",
+  "name": "Protractor-Internet-Explorer-Setup",
   "version": "1.0.1",
-  "description": "test",
+  "description": "IE_Setup",
   "main": "config/protractorConf.js",
   "scripts": {
-    "update-webdriver": "webdriver-manager update",
-    "postinstall": "webdriver-manager update",
+    "update-webdriver": "webdriver-manager --ie update",
+    "postinstall": "webdriver-manager --ie update",
     "instGlobal": "npm install -g protractor gulp",
     "pretest": "npm install",
-    "test": "gulp test --suite release",
-    "start": "gulp test --suite release"
+    "test": "gulp test --suite sandbox"
   },
-  "author": "Fabian C",
+  "author": "Eduard C",
   "dependencies": {
     "date-fns": "^1.29.0",
     "del": "^3.0.0",

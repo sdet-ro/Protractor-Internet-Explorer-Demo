@@ -8,21 +8,22 @@ describe('Internet Explorer Demo -- github', function () {
     });
 
     it('should load successfully', function () {
-        Utils.enableIgnoreSync()
+        Utils.enableIgnoreSync();
         browser.get(panel.webPage);
         expect(browser.getCurrentUrl()).toBe(panel.webPage);
     });
-    it('should browse to a repository', function () {
-      let searchBar = $('.header-search-input');
+    it('should find the internet Explorer repo on github', function () {
+      let searchBar = $(panel.searchBtn);
       Utils.smartWait(1, searchBar);
-      searchBar.sendKeys('Protractor-Internet-Explorer-Demo');
+      searchBar.sendKeys(panel.repoName);
       searchBar.sendKeys(protractor.Key.ENTER);
-      Utils.smartWait(5000);
-        // browser.actions().sendKeys(protractor.Key.ENTER).perform();
-
     });
-
-
+    it('should browse to the repository', function () {
+        let repoLink = $$(panel.alignLink).last();
+        Utils.smartWait(1, repoLink, true);
+        repoLink.click();
+        Utils.smartWait(5000);
+    });
 
 
 });
