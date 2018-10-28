@@ -4,8 +4,8 @@
   "description": "IE_Setup",
   "main": "config/protractorConf.js",
   "scripts": {
-    "update-webdriver": "webdriver-manager --ie update",
-    "postinstall": "webdriver-manager --ie update",
+    "update-webdriver": "webdriver-manager update",
+    "postinstall": "webdriver-manager update",
     "instGlobal": "npm install -g protractor gulp",
     "pretest": "npm install",
     "test": "gulp test --suite sandbox"

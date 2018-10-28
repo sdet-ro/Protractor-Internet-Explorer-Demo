@@ -27,4 +27,4 @@ Protractor config/protractorConf.js
 
 Also, you will need to configure Internet Explorer, and disable the security flags. 
 ####See the complete tutorial for Protractor and Internet Explorer here: 
-https://sdet.ro/blog/protractor-with-internet-explorer-testing
+https://sdet.ro/blog/protractor-with-internet-explorer
