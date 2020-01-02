@@ -4,11 +4,11 @@
   "description": "IE_Setup",
   "main": "config/protractorConf.js",
   "scripts": {
-    "update-webdriver": "webdriver-manager update",
-    "postinstall": "webdriver-manager update",
-    "instGlobal": "npm install -g protractor gulp",
+    "update-webdriver": "./node_modules/.bin/webdriver-manager update",
+    "postinstall": "node_modules/.bin/webdriver-manager update",
     "pretest": "npm install",
-    "test": "gulp test --suite sandbox"
+    "instGlobal": "npm install -g protractor gulp",
+    "test": "./node_modules/.bin/protractor config/protractorConf.js --suite sandbox"
   },
   "author": "Eduard C",
   "dependencies": {
