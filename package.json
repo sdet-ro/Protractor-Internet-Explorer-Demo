@@ -30,7 +30,7 @@
     "protractor-jasmine2-html-reporter": "0.0.7",
     "public-ip": "^2.4.0",
     "request": "^2.87.0",
-    "striptags": "^3.1.1",
+    "striptags": "^3.2.0",
     "xhr": "^2.5.0",
     "xlsx": "^0.13.3",
     "xmlhttprequest": "^1.8.0",
